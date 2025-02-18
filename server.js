@@ -13,6 +13,14 @@ app.get('/', (req, res) => {
     res.render('index', { title: "Scholar Home" });
 });
 
+app.get('/order', (req, res) => {
+    res.render('order', { title: "Scholar Home" });
+});
+
+app.get('/detailproduct', (req, res) => {
+    res.render('detailproduct', { title: "Scholar Home" });
+});
+
 // Jalankan server
 const PORT = 3000;
 app.listen(PORT, () => {
